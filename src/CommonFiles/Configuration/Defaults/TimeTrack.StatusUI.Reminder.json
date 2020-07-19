@@ -1,0 +1,17 @@
+{
+  "Reminder": {
+    "OnIdle": {
+      "DefinitionName": "IdleNotification",
+      "NotificationThreshhold": "00:05:00",
+      "RetriggerThreshhold": "00:05:00"
+    },
+    "ToastNotificationDefinitions": [
+      {
+        "DefinitionName": "IdleNotification",
+        "TextLines": [ "Hello, did you forget to activate time tracking, maybe?" ],
+        "Sound": "Default"
+      }
+    ]
+  }
+
+}

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
+    <Version>0.0.1</Version>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG_PLUGIN_LAUNCH_</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TimeTrack.Application.Common.Interfaces\TimeTrack.Application.Common.Interfaces.csproj" />
+    <ProjectReference Include="..\TimeTrack.Application.Common\TimeTrack.Application.Common.csproj" />
+    <ProjectReference Include="..\TimeTrack.Console.Interfaces\TimeTrack.Console.Interfaces.csproj" />
+    <ProjectReference Include="..\TimeTrack.Console.OutputFormatting\TimeTrack.Console.OutputFormatting.csproj" />
+    <ProjectReference Include="..\TimeTrack.Core\TimeTrack.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

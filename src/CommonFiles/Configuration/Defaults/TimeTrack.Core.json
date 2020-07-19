@@ -1,0 +1,6 @@
+{
+  "TimeTrackManagerConfiguration": {
+    "CaseSensitive": false,
+    "IgnoreRestartSameActivity": false
+  }
+}

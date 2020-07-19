@@ -1,0 +1,54 @@
+TODO:
+- Add proper Logger?
+- Code analysis / rule set?
+- Status UI Reminder On Tracking - Active Day / Time Ranges?
+
+2020-06-04 22:45 
+- Keypirinha Plugin: Add configurable custom console commands
+- New TimeTrack.Console.Plugin.ResumeCommand
+
+2020-05-31 19:10 
+- StatusUI: Reminder Text can not contain dynamic content (e.g. Duration, Activity infos)
+- StatusUI: Image file for reminder can now be relative path (Application root is base path for relative image paths)
+
+2020-05-31 15:30 
+- Console: Removed query type "current"
+- Keypirinha Plugin: BREAKING: Existing configuration items segmented into subcategories (console, start_suggestions)
+
+2020-05-31 15:00
+- Console: Additional query types added: available-aliases, available-queries, available-export-types, available-custom-plugins
+- Console: New global parameter "ConfirmExit" to keep Console window open for display outout scenarios 
+- Keypirinha Plugin: Allow running aliases directly (with console output window visible) as Action Menu and optionally directly as catalog item
+
+2020-05-31 01:00
+- StatusUI: Improved layout / Context menu for Trayicon
+- StatusUI: Label clicks copies text to clipboard
+- StatusUI: Update interval configurable and Notifications permanently disablable
+- StatusUI / Console: Timespans no longer show days
+
+2020-05-30 17:25
+- Implemented Nuke Build and Release Output
+- Renamed Common Application Libraries and Plugins
+- Core/Common Applications: Changed configuration from single file to folder (multiple dedicated config files supported)
+	StatusUI and Console: Parameter Name "config" usage changed from Single file to folder path
+	StatusUI and Console: Default Configuration Folder set to <bin>\Configuration
+	Console: Environment Variable for Configuration changed from "TimeTrack.Console.ConfigurationFilePath" to "TimeTrack.Application.ConfigurationPath"
+	StatusUI: Environment Variable for Configuration changed from "TimeTrack.Status.UI.ConfigurationFilePath" to "TimeTrack.Application.ConfigurationPath"
+
+2020-05-24 15:00
+- Console: Add "Execute Custom Plugin" function
+
+2020-05-23 23:20
+- Console: DateTime String Parser as Plugins
+- Console: Added new DateTimeString Parser: ChronicDateTimeStringParser based on ChronicNetCore
+- Console: Added Default/Template Configuration File
+
+2020-05-23 17:50
+- Console: Added Plugin Capability
+- Console: LiteDb Data Storage Provider as Plugin
+
+2020-05-21 20:00
+- Core: Add "Auto-Discard" feature
+- Console: Add "p_idle_since" query type and update Keypirhina Plugin to use this instead of "current" for "Query" result
+- Keypirhina Plugin: Improve Query Function Result Display (Not an error item anymore, default custom function that can be closed with "enter")
+- Keypirhina Plugin: Use Keypirhina defaults in Suggestion Function

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TimeTrack.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "custom-plugin --config d:\\temp -n Resume-Activity --command 1"
+    }
+  }
+}

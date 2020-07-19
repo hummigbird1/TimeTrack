@@ -1,0 +1,48 @@
+{
+  "Reminder": {
+    "SilentTimes": [
+      {
+        "Days": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+        "Start": "00:00:00",
+        "End": "23:59:59"
+      }
+    ],
+    "OnIdle": {
+      "DefinitionName": "MyTestNoti",
+      "NotificationThreshhold": "00:05:00",
+      "RetriggerThreshhold": "00:05:00"
+    },
+    "OnTracking": [
+      {
+        "Activities": [ "TEST" ],
+        "DefinitionName": "MyTestNoti",
+        "NotificationThreshhold": "00:00:20",
+        "RetriggerThreshhold": "00:02:00"
+      },
+      {
+        "Activities": [ "STANDUP" ],
+        "DefinitionName": "MyTestNoti",
+        "NotificationThreshhold": "00:05:00",
+        "RetriggerThreshhold": "00:05:00"
+      }
+    ],
+    "OnTest": "MyTestNoti",
+    "ToastNotificationDefinitions": [
+      {
+        "DefinitionName": "MyTestNoti",
+        "TextLines": [ "Did you forget to activate time tracking, maybe? Hey?" ],
+        "Sound": "Alarm;2"
+      },
+      {
+        "DefinitionName": "--TEMPLATE--",
+        "ImageFileOrUrl": "",
+        "InputNotificationTemplateFilePath": "",
+        "LongDisplayDuration": false,
+        "LoopSound": false,
+        "Sound": "SMS",
+        "StandardTemplateName": "ToastText01"
+      }
+    ]
+  }
+
+}

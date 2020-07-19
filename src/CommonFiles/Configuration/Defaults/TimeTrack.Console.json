@@ -1,0 +1,8 @@
+{
+  "DependencyInjectionServiceSelection": [
+    {
+      "ServiceType": "IDateTimeStringParser",
+      "TypeName": "DateTimeStringParser"
+    }
+  ]
+}

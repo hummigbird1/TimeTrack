@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TimeTrack.Status.UI": {
+      "commandName": "Project",
+      "commandLineArgs": "--config d:\\temp\\Test"
+    }
+  }
+}

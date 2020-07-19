@@ -1,0 +1,6 @@
+{
+  "LiteDbDataStorageFactory": {
+    "FileName": "Data\\TimeTrack-%COMPUTERNAME%-%USERNAME%.db",
+    "Mode": "Shared"
+  }
+}

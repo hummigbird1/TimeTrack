@@ -1,0 +1,18 @@
+{
+  "DependencyInjectionServiceSelection": [
+    {
+      "ServiceType": "IDateTimeStringParser",
+      "TypeName": "DateTimeStringParser"
+    }
+  ],
+  "Aliases": [
+    {
+      "Name": "yesterday",
+      "Arguments": [
+        "list",
+        "--From",
+        "yesterday"
+      ]
+    }
+  ]
+}
